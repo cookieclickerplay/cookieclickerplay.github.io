@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web Trò Chơi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Đảm bảo các phần tử chiếm toàn bộ chiều cao */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      /* Cho main content chiếm dư không gian */
+      .flex-grow {
+        flex: 1 1 auto;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center mb-4 md:mb-0">
+          <img src="eggy-car.png" alt="eggy-car" class="h-10 w-10 mr-3" />
+          <h1 class="text-2xl font-bold">Trò Chơi Của Trung Tung Hoành</h1>
+        </div>
+        <!-- Navigation -->
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#game1" class="hover:underline">Eggy Car</a></li>
+            <li><a href="#game2" class="hover:underline">Cookie Clicker</a></li>
+            <li><a href="#game3" class="hover:underline">Game Khác</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-4 overflow-auto">
+      <!-- Eggy Car -->
+      <section id="game1" class="mb-8">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-xl font-semibold">Eggy Car</h2>
+          <button
+            onclick="openFullscreen('game1-frame')"
+            class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+          >
+            Full Screen
+          </button>
+        </div>
+        <div class="relative" style="padding-top: 56.25%">
+          <iframe
+            id="game1-frame"
+            src="https://webglmath.github.io/eggy-car/"
+            class="absolute top-0 left-0 w-full h-full border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Cookie Clicker -->
+      <section id="game2" class="mb-8">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-xl font-semibold">Cookie Clicker</h2>
+          <button
+            onclick="openFullscreen('game2-frame')"
+            class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+          >
+            Full Screen
+          </button>
+        </div>
+        <div class="relative" style="padding-top: 56.25%">
+          <iframe
+            id="game2-frame"
+            src="https://cookie-clicker2.com/cookie-clicker-2.embed"
+            class="absolute top-0 left-0 w-full h-full border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Game Khác -->
+      <section id="game3" class="mb-8">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-xl font-semibold">Game Khác</h2>
+          <button
+            onclick="openFullscreen('game3-frame')"
+            class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+          >
+            Full Screen
+          </button>
+        </div>
+        <div class="relative" style="padding-top: 56.25%">
+          <iframe
+            id="game3-frame"
+            src="https://games.poki.com/458768/9f1b16bc-cacf-4309-8d46-2ff2d6671e12?tag=pg-248e5db43c4cce73ad7caf8e48456414e459cac7&site_id=3&iso_lang=en&country=VN&poki_url=https://poki.com/en/g/eggy-car&hoist=yes&nonPersonalized=n&familyFriendly=n&categories=78,96,893,1193&special_condition=landing"
+            class="absolute top-0 left-0 w-full h-full border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+      <p>&copy; 2025 Trang Web Trò Chơi. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <!-- Fullscreen Script -->
+    <script>
+      function openFullscreen(frameId) {
+        const iframe = document.getElementById(frameId);
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+          /* Firefox */
+          iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) {
+          /* Chrome, Safari & Opera */
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+          /* IE/Edge */
+          iframe.msRequestFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>
