@@ -1,79 +1,94 @@
 <!DOCTYPE html>  
-  <html lang="en">  
-    <head>  
-      <meta charset="UTF-8" />  
-      <meta  
-        name="description"  
-        content="Join Cake Maker on Game Portal to create and decorate your virtual cakes with endless creative challenges. Enjoy interactive gameplay in full screen mode for an immersive gaming experience!"  
-      />  
-      <meta  
-        name="keywords"  
-        content="Cake Maker, Online Game, Full Screen Game, Game Portal, Cake Making, Interactive Game"  
-      />  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+<html lang="en">  
+  <head>  
+    <meta charset="UTF-8" />  
+    <meta  
+      name="description"  
+      content="Join Cake Maker on Game Portal to create and decorate your virtual cakes with endless creative challenges. Enjoy interactive gameplay in full screen mode for an immersive gaming experience!"  
+    />  
+    <meta  
+      name="keywords"  
+      content="Cake Maker, Online Game, Full Screen Game, Game Portal, Cake Making, Interactive Game"  
+    />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   
-      <!-- Favicon links -->  
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />  
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />  
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />  
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />  
+    <!-- Favicon links -->  
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />  
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />  
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />  
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />  
   
-      <title>Game Portal - Cake Maker Demo</title>  
+    <title>Game Portal - Cake Maker Demo</title>  
   
-      <!-- Schema.org JSON-LD Markup -->  
-      <script type="application/ld+json">  
-      {  
-        "@context": "https://schema.org",  
-        "@type": "WebSite",  
-        "name": "Game Portal - Cake Maker",  
-        "url": "https://yourdomain.com",  
-        "description": "Join Cake Maker on Game Portal to create and decorate your virtual cakes with endless creative challenges. Enjoy interactive gameplay in full screen!",  
-        "publisher": {  
-          "@type": "Organization",  
-          "name": "Game Portal"  
+    <!-- Schema.org JSON-LD Markup -->  
+    <script type="application/ld+json">  
+    {  
+      "@context": "https://schema.org",  
+      "@type": "WebSite",  
+      "name": "Game Portal - Cake Maker",  
+      "url": "https://yourdomain.com",  
+      "description": "Join Cake Maker on Game Portal to create and decorate your virtual cakes with endless creative challenges. Enjoy interactive gameplay in full screen!",  
+      "publisher": {  
+        "@type": "Organization",  
+        "name": "Game Portal"  
+      }  
+    }  
+    </script>  
+  
+    <style>  
+      /* Global Settings */  
+      html, body {  
+        margin: 0;  
+        padding: 0;  
+        font-family: 'Segoe UI', Arial, sans-serif;  
+        background: #f5f5f5;  
+        color: #333;  
+      }  
+  
+      /* Heading Section Styling */  
+      .heading-section {  
+        background-color: #fff;  
+        text-align: center;  
+        padding: 30px 20px;  
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+      }  
+      .heading-section h1 {  
+        margin: 15px 0;  
+        font-size: 1.5rem;  
+        line-height: 1.2;  
+      }  
+  
+      /* Full Screen Game Container */  
+      .full-screen-container {  
+        width: 100vw;  
+        height: calc(100vh - 120px);  
+        background: #000; /* offers contrast if content loads slowly */  
+      }  
+      iframe {  
+        width: 100%;  
+        height: 100%;  
+        border: none;  
+      }  
+  
+      /* Responsive adjustments */  
+      @media (max-width: 768px) {  
+        .heading-section h1 {  
+          font-size: 1.3rem;  
         }  
       }  
-      </script>  
+    </style>  
+  </head>  
+  <body>  
+    <!-- Heading section with three H1 elements -->  
+    <div class="heading-section">  
+      <h1>The Addictive Incremental Game for Every Cookie Lover</h1>  
+      <h1>What is Cookie Clicker?</h1>  
+      <h1>Detailed Guide to Playing Cookie Clicker</h1>  
+    </div>  
   
-      <style>  
-        /* Reset margin, padding */  
-        html, body {  
-          margin: 0;  
-          padding: 0;  
-          font-family: Arial, sans-serif;  
-        }  
-        /* Container for headings */  
-        .heading-section {  
-          background-color: #fff;  
-          text-align: center;  
-          padding: 20px;  
-        }  
-        .heading-section h1 {  
-          margin: 10px 0;  
-        }  
-        /* Full screen container for the game */  
-        .full-screen-container {  
-          width: 100vw;  
-          height: calc(100vh - 120px);  
-        }  
-        iframe {  
-          width: 100%;  
-          height: 100%;  
-          border: none;  
-        }  
-      </style>  
-    </head>  
-    <body>  
-      <!-- Heading section with three H1 elements -->  
-      <div class="heading-section">  
-        <h1>The Addictive Incremental Game for Every Cookie Lover </h1>  
-        <h1>What is Cookie Clicker? </h1>  
-        <h1>Detailed Guide to Playing Cookie Clicker </h1>  
-      </div>  
-  
-      <!-- Full screen game container -->  
-      <div class="full-screen-container">  
-        <iframe src="https://games-online.io/game/cake-maker/" title="Cake Maker Game" allowfullscreen></iframe>  
-      </div>  
-    </body>  
-  </html>  
+    <!-- Full screen game container -->  
+    <div class="full-screen-container">  
+      <iframe src="https://games-online.io/game/cake-maker/" title="Cake Maker Game" allowfullscreen></iframe>  
+    </div>  
+  </body>  
+</html> 
