@@ -5,4 +5,5 @@ Allow: /css/
 Allow: /js/
 Allow: /images/
 
+# Sitemap
 Sitemap: https://cookieclickerplay.github.io/sitemap.xml  

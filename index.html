@@ -51,16 +51,141 @@
     <link rel="canonical" href="https://cookieclickerplay.github.io" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .header {
+        display: none; /* Ẩn header */
+      }
+
+      .game-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        max-width: none;
+      }
+
+      .game-frame {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .fullscreen-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 8px 15px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 1000;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+
+      .fullscreen-btn:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.9);
+      }
+    </style>
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Game Portal",
+        "description": "Play free online games including Cookie Clicker, Cake Maker, and many more. Best collection of HTML5 games for your entertainment.",
+        "url": "https://cookieclickerplay.github.io",
+        "potentialAction": {
+          "@type": "PlayAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://cookieclickerplay.github.io/games/{game}"
+          }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Game Portal",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cookieclickerplay.github.io/images/logo.png"
+          }
+        }
+      }
+    </script>
+
+    <!-- Thêm meta robots -->
+    <meta name="robots" content="index, follow" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5VFPP2PBYJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5VFPP2PBYJ");
+    </script>
   </head>
   <body>
     <header class="header">
-      <h1>Game Portal</h1>
-      <p>Play Your Favorite Games Online</p>
+      <h1>Game Portal - Free Online Games</h1>
+      <h2>Play Your Favorite Games Online</h2>
     </header>
 
-    <main class="game-grid">
-      <!-- Game cards will be inserted here by JavaScript -->
+    <main>
+      <div class="game-container">
+        <h2>Cake Maker Game</h2>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">
+          Full Screen
+        </button>
+        <iframe
+          id="gameFrame"
+          class="game-frame"
+          src="https://games-online.io/game/cake-maker/"
+          allowfullscreen
+        ></iframe>
+      </div>
     </main>
+
+    <script>
+      function toggleFullscreen() {
+        const gameFrame = document.getElementById("gameFrame");
+
+        if (!document.fullscreenElement) {
+          if (gameFrame.requestFullscreen) {
+            gameFrame.requestFullscreen();
+          } else if (gameFrame.webkitRequestFullscreen) {
+            gameFrame.webkitRequestFullscreen();
+          } else if (gameFrame.msRequestFullscreen) {
+            gameFrame.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+    </script>
 
     <script src="js/main.js"></script>
   </body>
