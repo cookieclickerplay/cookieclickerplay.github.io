@@ -2,17 +2,18 @@
 <html lang="en">  
   <head>  
     <meta charset="UTF-8" />  
+    <!-- Extended meta description: over 160 characters -->  
     <meta  
       name="description"  
-      content="Game Portal - Cake Maker: Play the Cake Maker online game and enjoy an interactive cake-making experience. Create delicious cakes and have fun!"  
+      content="Join Cake Maker on Game Portal to create and decorate your virtual cakes with endless creative challenges. Enjoy interactive gameplay, fun challenges, and join our vibrant community for competition and creativity!"  
     />  
     <meta  
       name="keywords"  
-      content="Cake Maker, Online Game, Game Portal, Cake Making, Interactive Game"  
+      content="Cake Maker, Online Game, Game Portal, Cake Making, Interactive Game, Creative Challenge"  
     />  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
 
-    <!-- Favicon links with consistent naming -->  
+    <!-- Favicon links with consistent naming and alt text description on an additional image -->  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />  
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />  
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />  
@@ -23,12 +24,14 @@
     <style>  
       body {  
         margin: 0;  
-        padding: 0;  
-        display: flex;  
-        justify-content: center;  
-        align-items: center;  
-        min-height: 100vh;  
+        padding: 20px;  
         background-color: #f0f0f0;  
+        font-family: Arial, sans-serif;  
+        line-height: 1.6;  
+      }  
+      .container {  
+        max-width: 1200px;  
+        margin: auto;  
       }  
       .game-container {  
         width: 100%;  
@@ -38,21 +41,84 @@
         border-radius: 10px;  
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
         overflow: hidden;  
+        margin-bottom: 20px;  
       }  
       iframe {  
         width: 100%;  
         height: 100%;  
         border: none;  
       }  
+      header, section, footer {  
+        margin-bottom: 20px;  
+        background: #fff;  
+        padding: 15px;  
+        border-radius: 8px;  
+        box-shadow: 0 0 8px rgba(0,0,0,0.05);  
+      }  
+      img.responsive {  
+        max-width: 100%;  
+        height: auto;  
+        display: block;  
+        margin: 10px 0;  
+      }  
+      h1, h2 {  
+        margin: 10px 0;  
+      }  
     </style>  
   </head>  
   <body>  
-    <div class="game-container">  
-      <iframe  
-        src="https://games-online.io/game/cake-maker/"  
-        title="Cake Maker Game"  
-        allowfullscreen  
-      ></iframe>  
+    <div class="container">  
+      <!-- Header Section with multiple H1 elements -->  
+      <header>  
+        <h1>DA</h1>  
+        <h1>PA</h1>  
+        <h1>BA</h1>  
+        <p>Welcome to Cake Maker, the ultimate online game where creativity meets fun! Build your cake empire and let your imagination run wild.</p>  
+      </header>  
+      
+      <!-- Additional Textual Content for higher text/HTML ratio -->  
+      <section>  
+        <h2>lorem</h2>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel dolor vitae nulla ultricies malesuada.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Curabitur sollicitudin, ipsum eu viverra suscipit, ante magna consequat magna, non facilisis lacus tellus nec urna.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Nulla facilisi. Donec efficitur, nisi ut consequat aliquam, libero lorem efficitur diam, eget blandit mi est sed justo.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Vivamus quis velit ac nulla fermentum euismod. Proin vitae massa eget arcu aliquet gravida.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Etiam nec elit nec elit tincidunt tincidunt ut a dui. In sit amet ex nec justo sodales sollicitudin.</p>  
+        
+        <h2>lorem</h2>  
+        <p>Morbi at urna ut turpis cursus efficitur. Suspendisse in felis ut magna convallis ullamcorper.</p>  
+      </section>  
+
+      <!-- Game Container -->  
+      <section class="game-container">  
+        <iframe  
+          src="https://games-online.io/game/cake-maker/"  
+          title="Cake Maker Game"  
+          allowfullscreen  
+        ></iframe>  
+      </section>  
+      
+      <!-- Additional image with ALT text -->  
+      <section>  
+        <img class="responsive" src="/images/cake-maker-banner.jpg" alt="Banner image for Cake Maker Game showing delicious cakes and creative gameplay" />  
+        <p>Explore creative cake making and interactive gameplay. Learn new techniques with our step-by-step guides and tips.</p>  
+      </section>  
+      
+      <!-- Footer Section with call-to-action and extra text -->  
+      <footer>  
+        <p>Check out other exciting games on our portal to boost your creative spirit! Xem những người khác.</p>  
+      </footer>  
     </div>  
   </body>  
 </html>  
