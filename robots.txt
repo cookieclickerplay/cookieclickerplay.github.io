@@ -1,4 +1,8 @@
-User-agent: *  
-Disallow:  
+User-agent: *
+Allow: /
+Allow: /game.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
 
 Sitemap: https://cookieclickerplay.github.io/sitemap.xml  
