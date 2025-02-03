@@ -149,49 +149,57 @@
     </header>
 
     <main>
-      <div class="game-container">
-        <h2>Cake Maker Game</h2>
-
-        <!-- Thêm các heading với nội dung mô tả game -->
-        <h3>Create Delicious Virtual Cakes</h3>
-
-        <div class="game-features">
-          <h4>Game Features</h4>
-          <ul>
-            <li>Multiple cake designs</li>
-            <li>Various toppings and decorations</li>
-            <li>Easy to play controls</li>
-          </ul>
+      <!-- Game Section -->
+      <section class="game-section">
+        <div class="game-container">
+          <button class="fullscreen-btn" onclick="toggleFullscreen()">
+            Full Screen
+          </button>
+          <iframe
+            id="gameFrame"
+            class="game-frame"
+            src="https://games-online.io/game/cake-maker/"
+            allowfullscreen
+          ></iframe>
         </div>
+      </section>
 
-        <div class="game-instructions">
-          <h5>How to Play</h5>
-          <ul>
-            <li>Choose your cake base</li>
-            <li>Add layers and frosting</li>
-            <li>Decorate with toppings</li>
-          </ul>
+      <!-- Game Info Section -->
+      <section class="game-info-section">
+        <div class="content-wrapper">
+          <h2>Cake Maker Game</h2>
+          <h3>Create Delicious Virtual Cakes</h3>
+
+          <div class="info-grid">
+            <div class="info-card game-features">
+              <h4>Game Features</h4>
+              <ul>
+                <li>Multiple cake designs</li>
+                <li>Various toppings and decorations</li>
+                <li>Easy to play controls</li>
+              </ul>
+            </div>
+
+            <div class="info-card game-instructions">
+              <h5>How to Play</h5>
+              <ul>
+                <li>Choose your cake base</li>
+                <li>Add layers and frosting</li>
+                <li>Decorate with toppings</li>
+              </ul>
+            </div>
+
+            <div class="info-card game-tips">
+              <h6>Pro Tips</h6>
+              <ul>
+                <li>Experiment with different combinations</li>
+                <li>Follow customer requests carefully</li>
+                <li>Time management is key</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div class="game-tips">
-          <h6>Pro Tips</h6>
-          <ul>
-            <li>Experiment with different combinations</li>
-            <li>Follow customer requests carefully</li>
-            <li>Time management is key</li>
-          </ul>
-        </div>
-
-        <button class="fullscreen-btn" onclick="toggleFullscreen()">
-          Full Screen
-        </button>
-        <iframe
-          id="gameFrame"
-          class="game-frame"
-          src="https://games-online.io/game/cake-maker/"
-          allowfullscreen
-        ></iframe>
-      </div>
+      </section>
     </main>
 
     <script>
