@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- external -->
     <script type="text/javascript">
@@ -108,6 +108,47 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
     <![endif]-->
 
     <!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
+
+    <!-- Thêm meta charset và description -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Cookie Clicker is an addictive incremental game where you bake cookies by clicking on a giant cookie. Unlock achievements, upgrades and build an empire of cookie production. Play now for free!"
+    />
+
+    <!-- Thêm Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Cookie Clicker",
+        "description": "An addictive incremental game about baking cookies",
+        "author": {
+          "@type": "Organization",
+          "name": "Orteil",
+          "url": "https://orteil.dashnet.org"
+        },
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <!-- Thêm heading h1 cho tiêu đề chính -->
+    <style>
+      .main-title {
+        font-size: 2.5em;
+        margin: 0.5em 0;
+      }
+      .section-title {
+        font-size: 1.8em;
+        margin: 0.3em 0;
+      }
+    </style>
   </head>
   <body>
     <div id="wrapper">
@@ -304,7 +345,8 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
         </div>
       </div>
       <div id="game">
-        <div id="versionNumber" class="title"></div>
+        <!-- Thay đổi versionNumber thành h1 -->
+        <h1 id="versionNumber" class="title main-title"></h1>
         <script>
           document.getElementById("versionNumber").innerHTML = "v. " + VERSION;
         </script>
@@ -397,6 +439,9 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
         <div class="separatorRight" id="rightBeam"></div>
 
         <div id="sectionMiddle" class="inset">
+          <h2 id="buildingsTitle" class="inset title zoneTitle section-title">
+            Buildings
+          </h2>
           <div id="comments" class="inset title">
             <div id="prefsButton" class="panelButton">
               <div class="subButton">Options</div>
@@ -421,9 +466,6 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
             <div class="separatorBottom"></div>
           </div>
           <div id="centerArea">
-            <div id="buildingsTitle" class="inset title zoneTitle">
-              Buildings
-            </div>
             <div id="buildingsMaster"></div>
             <div id="rows"></div>
             <div id="menu"></div>
@@ -432,7 +474,9 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 
         <div id="sectionRight" class="inset">
           <div id="store">
-            <div id="storeTitle" class="inset title zoneTitle">Store</div>
+            <h2 id="storeTitle" class="inset title zoneTitle section-title">
+              Store
+            </h2>
             <div id="toggleUpgrades" class="storeSection upgradeBox"></div>
             <div id="techUpgrades" class="storeSection upgradeBox"></div>
             <div id="vaultUpgrades" class="storeSection upgradeBox"></div>
